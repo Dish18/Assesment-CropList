@@ -46,3 +46,80 @@
 - **API Requests:** Axios library for fetching data from the provided API.
 - **Pagination:** ReactPaginate library for paginating the crop list.
 - **Code Structure:** Modular components for maintainability and readability.
+
+- # Installation Requirements
+
+## Node.js and npm:
+
+### Installation:
+1. Download and install Node.js from [nodejs.org](https://nodejs.org/).
+2. npm (Node Package Manager) is included with Node.js.
+
+## Create React App:
+
+### Installation:
+1. Open a terminal or command prompt.
+2. Run the following command to install Create React App globally:
+    ```bash
+    npm install -g create-react-app
+    ```
+3. Create a new React app:
+    ```bash
+    npx create-react-app crop-list-app
+    ```
+4. Change into the app's directory:
+    ```bash
+    cd crop-list-app
+    ```
+
+## React Router:
+
+### Installation:
+1. Inside the project directory, run the following command to install React Router:
+    ```bash
+    npm install react-router-dom
+    ```
+
+## Axios:
+
+### Installation:
+1. Run the following command to install Axios for handling API requests:
+    ```bash
+    npm install axios
+    ```
+
+## ReactPaginate:
+
+### Installation:
+1. Run the following command to install ReactPaginate for pagination:
+    ```bash
+    npm install react-paginate
+    ```
+
+## Bootstrap (Optional - for Styling):
+
+### Installation:
+1. Run the following command to install Bootstrap:
+    ```bash
+    npm install bootstrap
+    ```
+   
+### Integration:
+1. Import Bootstrap in your index.js file:
+    ```jsx
+    import 'bootstrap/dist/css/bootstrap.min.css';
+    ```
+
+## Modal Styles (Optional):
+
+### Installation:
+1. If custom modal styles are used, ensure that the necessary CSS is included or linked in your project.
+
+# Run the Application
+
+1. After installing the required packages, start the development server:
+    ```bash
+    npm start
+    ```
+2. Open your browser and visit [http://localhost:3000](http://localhost:3000) to view the application.
+
