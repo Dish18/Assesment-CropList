@@ -1,6 +1,8 @@
 # Crop List Web Application
 
-# Live-Link: assesment-croplist.netlify.app
+# Live-Link
+
+Visit the live application at [assesment-croplist.netlify.app](https://assesment-croplist.netlify.app).
 
 ## Screen 1 - Login Page:
 
