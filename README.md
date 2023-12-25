@@ -1,69 +1,48 @@
-Installation Requirements:
+# Crop List Web Application
 
-Node.js and npm:
+## Screen 1 - Login Page:
 
-Installation:
-Download and install Node.js from nodejs.org.
-npm (Node Package Manager) is included with Node.js.
-Create React App:
+- **Technology Used:** React for building the user interface.
+- **Components:**
+  - `Login.js`: Manages the login page with input fields for username and password.
+  - `App.js`: The main application component that handles routing.
+- **Authentication:**
+  - Default credentials: Username - `bharatagri`, Password - `1234`.
+  - Displays relevant error messages on incorrect credentials.
 
-Installation:
-Open a terminal or command prompt.
-Run the following command to install Create React App globally:
-bash
-Copy code
-npm install -g create-react-app
-Create a New React App:
-Navigate to the desired directory in the terminal.
-Run the following command to create a new React app:
-bash
-Copy code
-npx create-react-app crop-list-app
-Change into the app's directory:
-bash
-Copy code
-cd crop-list-app
-React Router:
+## Screen 2 - Crop List:
 
-Installation:
-Inside the project directory, run the following command to install React Router:
-bash
-Copy code
-npm install react-router-dom
-Axios:
+- **Technology Used:** React, Axios for API requests, and ReactPaginate for pagination.
+- **Components:**
+  - `CropList.js`: Renders the list of crops from API 1 in a responsive grid layout.
+  - `App.js`: Manages the routing between login and crop list screens.
+- **API Interaction:**
+  - Uses Axios to fetch data from [API](https://api-cache-test.leanagri.com/pop/pop_list/en/64/pop_list.json).
+- **Responsive Grid Layout:**
+  - Crop information displayed in separate cards.
+  - Auto-fit sized crop images centered in each card.
+  - 2 or 3 crop cards displayed in a row based on screen size.
+- **Modal:**
+  - Modal opens on clicking a crop card, displaying the crop image alone.
 
-Installation:
-Run the following command to install Axios for handling API requests:
-bash
-Copy code
-npm install axios
-ReactPaginate:
+## Brownie Points - Pagination:
 
-Installation:
-Run the following command to install ReactPaginate for pagination:
-bash
-Copy code
-npm install react-paginate
-Bootstrap (Optional - for Styling):
+- **Technology Used:** ReactPaginate library.
+- **Pagination Implementation:**
+  - Displays 10 crops per page.
+  - Navigation between pages using pagination controls.
 
-Installation:
-Run the following command to install Bootstrap:
-bash
-Copy code
-npm install bootstrap
-Integration:
-Import Bootstrap in your index.js file:
-jsx
-Copy code
-import 'bootstrap/dist/css/bootstrap.min.css';
-Modal Styles (Optional):
+## Search Functionality:
 
-Installation:
-If custom modal styles are used, ensure that the necessary CSS is included or linked in your project.
-Run the Application:
+- Added search functionality to filter crops based on the crop name.
+- Users can enter a search term to dynamically filter and display relevant crops.
+- A "Reset" button allows users to clear the search and display the full list of crops.
 
-After installing the required packages, start the development server:
-bash
-Copy code
-npm start
-Open your browser and visit http://localhost:3000 to view the application.
+## Tech Notes:
+
+- **State Management:** Utilizes React hooks for managing state (useState, useEffect).
+- **Routing:** React Router (BrowserRouter) for navigation between login and crop list screens.
+- **Styling:** CSS (app.css) for basic styling, responsiveness, and modal appearance.
+- **API Requests:** Axios library for fetching data from the provided API.
+- **Pagination:** ReactPaginate library for paginating the crop list.
+- **Code Structure:** Modular components for maintainability and readability.
